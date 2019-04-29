@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+
+import BasicMap from './map/index.js';
 
 class App extends Component {
   state = {
@@ -28,11 +30,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Working on dope ass React stuff.
-          </p>
+        <header className="BasicMap">
+          <BasicMap />
         </header>
         <p className="App-Intro">{this.state.data}</p>
       </div>
